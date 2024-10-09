@@ -1,92 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>HTML - Restaurante da Marina</title>
+    <title>Semântica - Restaurante da Marina</title>
   </head>
   <body>
-    <div>
-      <h1>Restaurante da Marina</h1>
-      <h2>Receitas do Dia</h2>
-      <h3>Mais pedidos</h3>
-      <h4>Especialidade da casa</h4>
-      <h5>Bebidas</h5>
-      <h6>Sobremesas</h6>
-    </div>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum enim,
-        omnis aspernatur voluptate molestias, sed aperiam sunt vitae in dolorum,
-        inventore dignissimos necessitatibus dolorem maxime ratione nisi fugiat
-        obcaecati veniam.
-      </p>
-    </div>
-    <div>
-      <ul>
-        <li>Cebola</li>
-        <li>Tomate</li>
-        <li>Alho</li>
-        <li>Sal</li>
-      </ul>
-
-      <ol>
-        <li>Lasanha</li>
-        <li>Filé com Fritas</li>
-        <li>Feijoada</li>
-        <li>Churrasco</li>
-      </ol>
-
-      <dl>
-        <dt>Aqui é o item da sua lista</dt>
-        <dd>E aqui sua descrição</dd>
-        <dt>Aqui é o item da sua lista</dt>
-        <dd>E aqui sua descrição</dd>
-        <dt>Aqui é o item da sua lista</dt>
-        <dd>E aqui sua descrição</dd>
-      </dl>
-    </div>
-    <div>
-      <img
-        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fo.imgac.net%2Freceita%2Flasanha-a-bolonhesa-com-queijo-35000.jpg&f=1&nofb=1&ipt=917ae582cb7d897e1dc6396662e925c21fe3a1f5ac5dae188ea0f453ee5be37c&ipo=images"
-        alt="Uma fatia de Lasanha"
-        width="150px"
-      />
-      <img
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd1uz88p17r663j.cloudfront.net%2Foriginal%2F277d4930caaeed5c93de63d801c5b3b9_mini-feijoada-receitas-nestle.jpg&f=1&nofb=1&ipt=a181cf34411accf49e7b129a29d0f0e5470025af69f372dcbf8916c42820af6e&ipo=images"
-        alt="Uma panela de feijoada"
-        width="150px"
-      />
-    </div>
-    <div>
-      <a
-        href="https://www.tudogostoso.com.br/receita/2998-feijoada.html"
-        target="blank"
-      >
-        Tudo Gostoso
-      </a>
-    </div>
-    <div>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/0PhJQ_5DF4c?si=vZx3T0DpqyrUB41L"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.256561538945!2d-35.76051182471669!3d-9.659105890429611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7014f9e6ce076c9%3A0xb208a23501212e7b!2sPra%C3%A7a%20Padre%20C%C3%ADcero%20-%20Vergel%20do%20Lago%2C%20Macei%C3%B3%20-%20AL%2C%2057014-510!5e0!3m2!1spt-BR!2sbr!4v1726234641887!5m2!1spt-BR!2sbr"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
+    <header>
+      <h1>Titulo</h1>
+      <nav>
+        <section>
+          <ul>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+            <li>
+              <a href="#">Produtos</a>
+            </li>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <h2>Subtitulo</h2>
+      <br />
+      <section>
+        <h2>Carnes</h2>
+        <div>
+          <p>Receita cozido</p>
+        </div>
+        <div>
+          <p>Ensopado</p>
+        </div>
+      </section>
+      <br />
+      <section>
+        <figure>
+          <img
+            width="200px"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kcms.com.br%2Fblog%2Fwp-content%2Fuploads%2F2019%2F11%2F312665-3-dicas-para-o-desenvolvimento-de-novos-produtos-em-restaurantes.jpg&f=1&nofb=1&ipt=bdaba9ec43b475e261f3403c8ff705c8eb2b77ed5227b9c71ecf3a45a44b06c1&ipo=images"
+            alt="Imagem de um garçom servindo pessoas"
+          />
+          <figcaption>Imagem de um garçom servindo pessoas</figcaption>
+        </figure>
+      </section>
+      <br />
+      <section>
+        <form>
+          <div>
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Digite seu nome"
+            />
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu E-mail"
+            />
+          </div>
+          <div>
+            <label for="age">Idade:</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Digite sua idade"
+            />
+          </div>
+          <div>
+            <label>Você já foi no restaurante da Marina?</label>
+            <label for="yes">Sim</label>
+            <input type="radio" name="attended" id="yes" value="yes" />
+            <label for="no">Não</label>
+            <input type="radio" name="attended" id="no" value="no" />
+          </div>
+          <div>
+            <label>Dias disponiveis:</label>
+            <label for="monday">Segunda</label>
+            <input type="checkbox" name="monday" id="monday" />
+            <label for="tuesday">Terça-Feira</label>
+            <input type="checkbox" name="tuesday" id="tuesday" />
+            <label for="wednesday">Quarta-Feira</label>
+            <input type="checkbox" name="wednesday" id="wednesday" />
+            <label for="Thursday">Quinta-Feira</label>
+            <input type="checkbox" name="Thursday" id="Thursday" />
+            <label for="Friday">Sexta-Feira</label>
+            <input type="checkbox" name="Friday" id="Friday" />
+            <label for="Saturday">Sábado</label>
+            <input type="checkbox" name="Saturday" id="Saturday" />
+            <label for="Sunday">Domingo</label>
+            <input type="checkbox" name="Sunday" id="Sunday" />
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <br />
+    <footer>
+      <section>
+        <p>(82) 99999-9999</p>
+        <ul>
+          <li>
+            <a href="#">A</a>
+          </li>
+          <li>
+            <a href="#">B</a>
+          </li>
+          <li>
+            <a href="#">C</a>
+          </li>
+        </ul>
+      </section>
+      <br />
+      <p>Criado por Alan Fabrício</p>
+    </footer>
   </body>
 </html>
