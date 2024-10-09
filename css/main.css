@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #999;
+}
+
+figure img {
+  width: 500px;
+}
+
+section {
+  color: #fff;
+  border: solid 2px;
+  width: 750px;
+  height: 300px;
+  background-image: url(../assets/img/netflixBackground.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=main.css.map */
