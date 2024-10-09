@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/_base.scss","../sass/_reset.scss","../sass/_header.scss","../sass/_main.scss"],"names":[],"mappings":"AAAQ;ACAR;EACE;EACA;EACA;;;ACHF;EACE;EACA;EACA;EACA;;;ACHA;EACE;EACA;;AAGF;EACE;EACA;EAEA;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EAGA;EACA;;AAKF;EACE;EAGA;EACA;EACA;EACA","file":"global.css"}

@@ -1,0 +1,38 @@
+main {
+  img {
+    width: 200px;
+    display: block;
+  }
+
+  div {
+    width: 200px;
+    height: 100px;
+    //background-color: red;
+    background-color: #00ffff;
+    border: 2px solid;
+    text-align: center;
+    display: inline-block;
+  }
+
+  article {
+    border: 2px solid;
+    width: 200px;
+    height: 100px;
+    //background-color: #bc8f8f;
+    //background-color: rgb(6, 164, 159);
+    background-color: rgba(255, 3, 10, 0.3);
+    text-align: center;
+    //Display inline não respeita tamanho e altura
+    //display: inline;
+  }
+
+  p {
+    text-align: left;
+    //text-transform: capitalize;
+    //text-transform: lowercase;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
