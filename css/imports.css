@@ -1,3 +1,7 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html,
 body,
 div,
@@ -87,6 +91,7 @@ video {
   vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -128,50 +133,63 @@ table {
   border-spacing: 0;
 }
 
+body {
+  background-color: #999;
+}
+
 header {
-  height: 12.8vh;
-  box-shadow: 7px 1px #999;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-header nav {
-  width: 17.5vw;
-}
-header nav ul {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 24.6vh;
+  background-color: #111;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header nav li:hover {
-  border-bottom: 1px solid;
+header div .firstBtn {
+  width: 19.3vw;
+  height: 8.3vh;
+  background-color: #df0712;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 32px;
+}
+header div .secondBtn {
+  width: 9.8vw;
+  height: 8.3vw;
+  background-color: inherit;
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 10px;
 }
 
 main {
-  height: 80vh;
+  background-color: #181818;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-}
-main section {
-  width: 32.9vw;
-  height: 45.4vh;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
-main section p {
-  font-size: 2.25rem;
-  font-weight: 700;
+
+.firstContainer {
+  width: 70vw;
+  height: 30vh;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
 }
-main section button {
-  width: 19.1vw;
-  height: 7.8vh;
-  background-color: #fca60f;
+.firstContainer h2 {
   color: #fff;
-  border: none;
-  font-size: 24px;
-  font-weight: 700;
+  font-weight: 300;
+  font-size: 40px;
+}
+.firstContainer h2 span {
+  font-weight: bold;
+  display: block;
+}
+.firstContainer img {
+  width: 7vw;
 }
 
 /*# sourceMappingURL=imports.css.map */
