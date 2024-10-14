@@ -134,62 +134,49 @@ table {
 }
 
 body {
-  background-color: #999;
+  background-color: cadetblue;
 }
 
 header {
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 24.6vh;
-  background-color: #111;
+  border: solid 2px;
+}
+header ul {
+  width: 30vw;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-header div .firstBtn {
-  width: 19.3vw;
-  height: 8.3vh;
-  background-color: #df0712;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-size: 32px;
-}
-header div .secondBtn {
-  width: 9.8vw;
-  height: 8.3vw;
-  background-color: inherit;
-  color: #fff;
-  border: solid 1px #fff;
-  border-radius: 10px;
-}
 
-main {
-  background-color: #181818;
+@media (max-width: 800px) {
+  body {
+    background-color: green;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    color: yellow;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  li {
+    font-size: 3rem;
+  }
+}
+body header {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
-
-.firstContainer {
-  width: 70vw;
-  height: 30vh;
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
+@media (max-width: 800px) {
+  body header {
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+  }
 }
-.firstContainer h2 {
-  color: #fff;
-  font-weight: 300;
-  font-size: 40px;
-}
-.firstContainer h2 span {
-  font-weight: bold;
-  display: block;
-}
-.firstContainer img {
-  width: 7vw;
+@media (max-width: 800px) {
+  body header ul {
+    width: 50vw;
+    border: solid 2px red;
+  }
 }
 
 /*# sourceMappingURL=imports.css.map */
