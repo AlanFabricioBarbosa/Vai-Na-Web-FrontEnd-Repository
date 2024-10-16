@@ -1,181 +1,105 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
+  box-sizing: border-box;
+  text-decoration: none;
   list-style: none;
 }
 
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+body {
+  font-size: 100%;
+  list-style-type: none;
 }
 
 body {
-  background-color: cadetblue;
+  background-color: #999;
 }
 
 header {
-  border: solid 2px;
-}
-header ul {
-  width: 30vw;
+  height: 25vh;
+  background-color: #ff69b4;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 770px) {
+  header {
+    flex-direction: column;
+    height: 30vh;
+  }
 }
 
-@media (max-width: 800px) {
-  body {
-    background-color: green;
-  }
-}
-@media (min-width: 900px) {
-  body {
-    color: yellow;
-  }
-}
-@media (min-width: 300px) and (max-width: 400px) {
-  li {
-    font-size: 3rem;
-  }
-}
-body header {
+.boxLogo {
+  width: 30vw;
   display: flex;
+  align-items: center;
+  color: white;
 }
-@media (max-width: 800px) {
-  body header {
-    background-color: aquamarine;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
+@media (max-width: 770px) {
+  .boxLogo {
+    width: 12vw;
   }
 }
-@media (max-width: 800px) {
-  body header ul {
-    width: 50vw;
-    border: solid 2px red;
+.boxLogo h1 {
+  font-size: 1.75vw;
+  font-weight: 400;
+}
+@media (max-width: 770px) {
+  .boxLogo h1 {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 500px) {
+  .boxLogo h1 {
+    font-size: 3.1vw;
+  }
+}
+@media (max-width: 1000px) {
+  .boxLogo img {
+    width: 9vw;
+  }
+}
+@media (max-width: 770px) {
+  .boxLogo img {
+    width: 12vw;
+  }
+}
+@media (max-width: 500px) {
+  .boxLogo img {
+    font-size: 15vw;
+  }
+}
+
+header nav {
+  width: 50%;
+}
+@media (max-width: 770px) {
+  header nav {
+    width: 100%;
+  }
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul a {
+  color: white;
+  font-size: 1.75vw;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+@media (max-width: 770px) {
+  header nav ul a {
+    justify-content: space-evenly;
+    font-size: 2.3vw;
+  }
+}
+@media (max-width: 770px) {
+  header nav ul a {
+    font-size: 3vw;
   }
 }
 
