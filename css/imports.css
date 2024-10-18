@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  background-color: #999;
+  background-color: #ffd9ec;
 }
 
 header {
@@ -100,6 +100,56 @@ header nav ul a {
 @media (max-width: 770px) {
   header nav ul a {
     font-size: 3vw;
+  }
+}
+
+.sessao-sobre {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 900px) {
+  .sessao-sobre {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 650px) {
+  .sessao-sobre {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 470px) {
+  .sessao-sobre {
+    height: 70vh;
+  }
+}
+.sessao-sobre p {
+  width: 40vw;
+  font-size: 1.5vw;
+}
+@media (max-width: 900px) {
+  .sessao-sobre p {
+    font-size: 1.8vw;
+    width: 43vw;
+  }
+}
+@media (max-width: 650px) {
+  .sessao-sobre p {
+    width: 63vw;
+  }
+}
+@media (max-width: 470px) {
+  .sessao-sobre p {
+    font-size: 2.8vw;
+  }
+}
+.sessao-sobre img {
+  width: 25vw;
+}
+@media (max-width: 900px) {
+  .sessao-sobre img {
+    width: 28vw;
   }
 }
 
