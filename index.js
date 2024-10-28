@@ -1,43 +1,84 @@
-let verificaDia = false;
+console.log("*************** Loops ***************");
 
-console.log(verificaDia === true ? "Está de dia" : "Está de noite");
+// For
 
-let verificaTemperatura = 30;
+for (let i = 0; i <= 5; i++) {
+  console.log("Primeiro For");
+  console.log(i);
+}
 
-console.log(
-  verificaTemperatura > 30
-    ? "Está muito quente"
-    : "A temperatura está agradável"
-);
+for (let i = 2; i <= 10; i += 2) {
+  console.log("Segundo For ");
+  console.log(i);
+}
 
-let verificaIdade = 26;
+// While
 
-if (verificaIdade < 12) {
-  console.log("Criança");
-} else if (verificaIdade >= 12 && verificaIdade <= 18) {
-  console.log("Adolescente");
-} else if (verificaIdade >= 19 && verificaIdade <= 60) {
-  console.log("Adulto");
+let i = 1;
+
+while (i <= 16) {
+  console.log("While Incremento");
+  console.log(i);
+  i++;
+}
+
+i = 5;
+
+while (i > 0) {
+  console.log("While Decremento");
+  console.log(i);
+  i--;
+}
+
+// Operadores Lógicos
+
+/*
+  &&
+  ||
+*/
+console.log("*************** Operadores Lógicos ***************");
+let login = "alan";
+let senha = 123;
+
+if (login === "alan" && senha === 123) {
+  console.log("Bem vindo");
 } else {
-  console.log("Idoso");
+  console.log("Login ou senha errado");
 }
 
-let calcNotas = 8.5;
+let membroClube = false;
+let temConvite = true;
 
-switch (true) {
-  case calcNotas >= 9:
-    console.log("Nota A");
-    break;
-  case calcNotas >= 8:
-    console.log("Nota B");
-    break;
-  case calcNotas >= 7:
-    console.log("Nota C");
-    break;
-  case calcNotas >= 6:
-    console.log("Nota D");
-    break;
-  default:
-    console.log("Nota F");
-    break;
+if (membroClube || temConvite) {
+  console.log("Pode entrar");
+} else {
+  console.log("Não pode entrar");
 }
+
+// Operadores de atribuição
+console.log("*************** Operadores de atribuição ***************");
+
+// Adição -> +
+console.log("Adicionando");
+console.log(5 + 5);
+// Subtração -> -
+console.log("Subtraindo");
+console.log(5 - 2);
+// Multiplicação  -> *
+console.log("Multiplicando");
+console.log(5 * 5);
+// Divisão -> /
+console.log("Dividindo");
+console.log(5 / 2);
+// Divisão com resto -> %
+console.log("Dividindo com resto");
+console.log(5 % 3);
+
+// Incremento e Decremento
+console.log("*************** Incremento e Decremento ***************");
+let num = 5;
+console.log("Incrementando o num:" + num++);
+console.log("num incrementado: " + num);
+
+console.log("Decrementando o num:" + num--);
+console.log("num Decrementado: " + num);
