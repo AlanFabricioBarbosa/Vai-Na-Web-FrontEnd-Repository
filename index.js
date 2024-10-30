@@ -1,84 +1,67 @@
-console.log("*************** Loops ***************");
+// Array
 
-// For
+let frutas = ["Banana", "Maçã", "Uva", "Laranja"];
 
-for (let i = 0; i <= 5; i++) {
-  console.log("Primeiro For");
-  console.log(i);
-}
+let series = ["The Wire", "Game of Thrones", "Black Mirros", "Vikings"];
+console.log(series);
 
-for (let i = 2; i <= 10; i += 2) {
-  console.log("Segundo For ");
-  console.log(i);
-}
+// Adiciona mais um item no final do array
+console.log("\n**** Adicionando mais um item no final do array com .push ****");
+series.push("Flash");
+console.log(series);
 
-// While
+// Adiciona mais um item no inicio do array
+console.log(
+  "\n**** Adicionando mais um item no inicio do array com .unshift ****"
+);
+series.unshift("The Office");
+console.log(series);
 
-let i = 1;
+// Reverte a ordem do array
+console.log("\n**** Revertendo a ordem do array com .reverse ****");
+series.reverse();
+console.log(series);
 
-while (i <= 16) {
-  console.log("While Incremento");
-  console.log(i);
-  i++;
-}
+// Remove o primeiro item da array
+console.log("\n**** Removendo o primeiro item do array com .shift ****");
+series.shift();
+console.log(series);
 
-i = 5;
+// Remove o ultimo item da array
+console.log("\n**** Removendo o ultimo item do array com .pop ****");
+series.pop();
+console.log(series);
 
-while (i > 0) {
-  console.log("While Decremento");
-  console.log(i);
-  i--;
-}
+// Remove um item/ itens do array de acordo com a posição dele
+console.log(
+  "\n**** um item/ itens do array de acordo com a posição dele com .slice ****"
+);
+let umaSerie = series.slice(1, 3);
+console.log(umaSerie);
 
-// Operadores Lógicos
+// Ordenando um array
+let num = [2, 5, 3, 4, 1, 6, 9, 8, 7];
+console.log("\n**** Ordenando um array com o .sort ****");
+num.sort();
+console.log(num);
 
-/*
-  &&
-  ||
-*/
-console.log("*************** Operadores Lógicos ***************");
-let login = "alan";
-let senha = 123;
+//Objeto
+console.log("\n**** Entendendo um objeto ****");
+const aluno = {
+  id: 1,
+  nome: "Alan",
+  idade: 26,
+  profissao: "Desenvolvedor",
+  cpf: 88888,
+};
+console.log(aluno);
 
-if (login === "alan" && senha === 123) {
-  console.log("Bem vindo");
-} else {
-  console.log("Login ou senha errado");
-}
+// Adicionando um item no objeto
+console.log("\n**** Adicionando mais um item no objeto ****");
+aluno.endereco = "Rua das Flores";
+console.log(aluno);
 
-let membroClube = false;
-let temConvite = true;
-
-if (membroClube || temConvite) {
-  console.log("Pode entrar");
-} else {
-  console.log("Não pode entrar");
-}
-
-// Operadores de atribuição
-console.log("*************** Operadores de atribuição ***************");
-
-// Adição -> +
-console.log("Adicionando");
-console.log(5 + 5);
-// Subtração -> -
-console.log("Subtraindo");
-console.log(5 - 2);
-// Multiplicação  -> *
-console.log("Multiplicando");
-console.log(5 * 5);
-// Divisão -> /
-console.log("Dividindo");
-console.log(5 / 2);
-// Divisão com resto -> %
-console.log("Dividindo com resto");
-console.log(5 % 3);
-
-// Incremento e Decremento
-console.log("*************** Incremento e Decremento ***************");
-let num = 5;
-console.log("Incrementando o num:" + num++);
-console.log("num incrementado: " + num);
-
-console.log("Decrementando o num:" + num--);
-console.log("num Decrementado: " + num);
+// Deletando um item do objeto
+console.log("\n**** Deletando um item do objeto ****");
+delete aluno.idade;
+console.log(aluno);
