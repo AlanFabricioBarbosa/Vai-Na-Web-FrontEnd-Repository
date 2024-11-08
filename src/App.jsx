@@ -1,7 +1,13 @@
+import Header from "./components/Header/Header.jsx";
+import Main from "./components/Main/main.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+
 export default function App() {
   return (
-    <div>
-      <h1>Olá Mundo</h1>
-    </div>
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
   );
 }
