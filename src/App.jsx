@@ -1,32 +1,20 @@
-import "./global.scss";
 import { useState } from "react";
+import "./global.scss";
+import ImgGenio from "./assets/img/imagemGenioComLampada.png";
+import ImgLampada from "./assets/img/imagemLampadaMagica.png";
 
 export default function App() {
-  const [name, setName] = useState("joe");
-  const [color, setColor] = useState("#F00");
-  const [num, setNum] = useState(0);
+  const [imgGenio, setImgGenio] = useState(ImgLampada);
 
-  const handleName = () => {
-    setName("Alan");
-  };
-
-  const handleColor = () => {
-    setColor("#0F0");
-  };
-
-  const handleNum = () => {
-    setNum(num + 1);
+  const handleImage = () => {
+    setImgGenio(ImgGenio);
   };
 
   return (
-    <>
-      <section style={{ background: color }}>
-        <h1>Meu nome é: {name}</h1>
-        <h2>Você recebeu {num} de likes</h2>
-        <button onClick={handleName}>Botão setName{handleName}</button>
-        <button onClick={handleColor}>Mudar a cor</button>
-        <button onClick={handleNum}>Dar like</button>
-      </section>
-    </>
+    <main>
+      <h1>Liberte a magia da programação com a lâmpada de Aladim.</h1>
+      <img src={imgGenio} alt="Imagem de uma lampada magica" />
+      <button onClick={handleImage}>Clique Aqui</button>
+    </main>
   );
 }
